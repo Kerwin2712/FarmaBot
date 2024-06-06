@@ -6,9 +6,118 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-      Hola
-    </h1>
+<div class="w-full">
+  <header class="bg-[#2c3e50] text-white py-8 px-6 md:px-12">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-2">Farmacia Mucuchies</h1>
+      <p class="text-lg">
+        Brindamos servicios farmacéuticos de calidad y atención personalizada a nuestros clientes.
+      </p>
+    </div>
+  </header>
+  <section class="py-12 px-6 md:px-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Ubicación</h2>
+        <p class="mb-4">Nos encontramos ubicados en:</p>
+        <p class="mb-4">Avenida Principal, Mucuchíes, Mérida, Venezuela</p>
+        <div class="aspect-w-16 aspect-h-9"></div>
+      </div>
+      <div class="mt-8 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Chatbot</h2>
+        <p>
+          ¿Necesitas ayuda para encontrar un producto? Nuestro chatbot está aquí para asistirte. Puede preguntarle
+          al asistente virtual por los medicamentos que necesita, preguntar precios y solicitar un pedido.
+        </p>
+        <div class="mt-8">
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm max-w-md w-full mx-auto"
+            data-v0-t="card"
+          >
+            <div class="space-y-1.5 p-6 flex flex-row items-center">
+              <div class="flex items-center space-x-4">
+                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                  <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">OM</span>
+                </span>
+                <div>
+                  <p class="text-sm font-medium leading-none">Asistente Virtual</p>
+                  <p>Farmacia Mucuchies</p>
+                </div>
+              </div>
+              <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 ml-auto rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                  <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                  <path d="M16 16h5v5"></path>
+                </svg>
+                <span class="sr-only">Cambiar ejemplo de chat</span>
+              </button>
+            </div>
+            <div class="p-6">
+              <div class="space-y-4">
+                <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm ml-auto bg-[#2c3e50] text-white dark:bg-gray-50 dark:text-gray-900">
+                  ¡Hola! ¿En qué puedo ayudarte?
+                </div>
+                <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-gray-100 dark:bg-gray-800">
+                  Estoy buscando un medicamento para el dolor de cabeza.
+                </div>
+                <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm ml-auto bg-[#2c3e50] text-white dark:bg-gray-50 dark:text-gray-900">
+                  De acuerdo, te recomiendo el Ibuprofeno. ¿Necesitas algo más?
+                </div>
+                <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-gray-100 dark:bg-gray-800">
+                  No, eso es todo. Muchas gracias.
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center p-6">
+              <form class="flex w-full items-center space-x-2">
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
+                  id="message"
+                  placeholder="Escribe tu mensaje..."
+                  autocomplete="off"
+                />
+                <button
+                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-10"
+                  type="submit"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4"
+                  >
+                    <path d="m22 2-7 20-4-9-9-4Z"></path>
+                    <path d="M22 2 11 13"></path>
+                  </svg>
+                  <span class="sr-only">Enviar</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   chat-title="FarmaciaChatBot"
